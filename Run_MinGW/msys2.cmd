@@ -28,7 +28,7 @@ if defined target_arg (
   )
 )
 echo cd to "%work_dir%"
-cd "%work_dir%"
+cd /d "%work_dir%"
 set work_dir=
 set target_arg=
 set target_attr=
@@ -44,8 +44,11 @@ rem set MSYS=winsymlinks:nativestrict
 rem set MSYS=error_start:%MSYS_PATH%\mingw64\bin\qtcreator.exe^|-debug^|^<process-id^>
 
 set CHERE_INVOKING=1
-start "" "%MSYS_PATH%\usr\bin\mintty" -i /msys2.ico -e /usr/bin/bash --login %CMD%
+set MSYS2_PATH_TYPE=inherit
 
+start "" "%MSYS_HOME%\usr\bin\mintty" -i /msys2.ico -e /usr/bin/bash --login %CMD%
+
+set MSYS2_PATH_TYPE=
 set CHERE_INVOKING=
 set MSYSTEM=
 set CMD=

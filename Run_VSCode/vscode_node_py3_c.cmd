@@ -19,7 +19,7 @@ set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%;%MINGW_PATH%
 set TARGET_DIR=%~1
 
 if defined TARGET_DIR (
-  cd %TARGET_DIR%
+  cd /d %TARGET_DIR%
   echo start at %TARGET_DIR%
 ) else (
   echo start at %~dp0

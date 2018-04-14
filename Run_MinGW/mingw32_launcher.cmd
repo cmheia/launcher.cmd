@@ -24,14 +24,18 @@ if defined target_arg (
   )
 )
 echo cd to "%work_dir%"
-cd "%work_dir%"
+cd /d "%work_dir%"
 set work_dir=
 set target_arg=
 set target_attr=
 set target_type=
 
 set CHERE_INVOKING=1
+set MSYS2_PATH_TYPE=inherit
 
-rem start "" %MSYS_PATH%\usr\bin\mintty -i /msys2.ico -t %CONTITLE% /usr/bin/bash --login
-start %CONTITLE% %MSYS_PATH%\mingw%MSYSTEM_VERSION%.exe
+rem start "" %MSYS_HOME%\usr\bin\mintty -i /msys2.ico -t %CONTITLE% /usr/bin/bash --login
+start %CONTITLE% %MSYS_HOME%\mingw%MSYSTEM_VERSION%.exe
+
 set MSYSTEM_VERSION=
+set CHERE_INVOKING=
+set MSYS2_PATH_TYPE=

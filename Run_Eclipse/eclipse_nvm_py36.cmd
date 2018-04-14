@@ -12,7 +12,7 @@ call %~dp0..\config\cfg_eclipse%ECLIPSE_VERSION%_path.cmd
 set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%
 
 if exist "%ECLIPSE_PATH%eclipse.exe" (
-  cd "%ECLIPSE_PATH%"
+  cd /d "%ECLIPSE_PATH%"
 ) else (
   echo "eclipse.exe Â·¾¶´íÎó"
   pause

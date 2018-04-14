@@ -18,7 +18,7 @@ if defined target_arg (
   )
 )
 echo cd to "%work_dir%"
-cd "%work_dir%"
+cd /d "%work_dir%"
 set work_dir=
 set target_arg=
 set target_attr=
