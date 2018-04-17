@@ -1,15 +1,17 @@
 @echo off
+setlocal
 
-set CONTITLE="CROSS-ARM-GCC"
-
-set GCC_VERSION=4.8-2014q1
-
-call %~dp0..\config\cfg_sys_path.cmd
-call %~dp0..\config\cfg_gcc_%GCC_VERSION%_path.cmd
+set PYTHON_VERSION=27
+set GCC_VERSION=5_4-2016q3-update
 
 set MAKE_PATH=C:\Program Files\GNU MCU Eclipse\Build Tools\2.9-20170629-1013\bin\bin
 
-set PATH=%SYS_PATH%;%MAKE_PATH%;%GCC_PATH%
+call %~dp0..\config\cfg_sys_path.cmd
+call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
+call %~dp0..\config\cfg_eclipse%ECLIPSE_VERSION%_path.cmd
+call %~dp0..\config\cfg_gcc_%GCC_VERSION%_path.cmd
+
+set PATH=%SYS_PATH%;%MAKE_PATH%;%GCC_PATH%;%PYTHON_PATH%
 
 set work_dir=%~dp0
 set target_arg=%1
@@ -31,4 +33,6 @@ set target_arg=
 set target_attr=
 set target_type=
 
+echo %PATH%
 start %CONTITLE% %ComSpec%
+::pause

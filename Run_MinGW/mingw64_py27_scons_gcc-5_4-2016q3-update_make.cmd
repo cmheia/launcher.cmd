@@ -5,7 +5,7 @@ if not defined MSYSTEM_VERSION (
 )
 
 set PYTHON_VERSION=27
-set GCC_VERSION=4.8-2014q1
+set GCC_VERSION=5_4-2016q3-update
 
 set MAKE_PATH=C:\Program Files\GNU MCU Eclipse\Build Tools\2.9-20170629-1013\bin\bin
 
