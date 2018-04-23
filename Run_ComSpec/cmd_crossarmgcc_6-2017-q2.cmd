@@ -3,11 +3,11 @@
 set CONTITLE="CROSS-ARM-GCC"
 
 set GCC_VERSION=6-2017-q2-update
+set MAKE_VERSION=gnumcueclipse
 
 call %~dp0..\config\cfg_sys_path.cmd
 call %~dp0..\config\cfg_gcc_%GCC_VERSION%_path.cmd
-
-set MAKE_PATH=C:\Program Files\GNU MCU Eclipse\Build Tools\2.9-20170629-1013\bin\bin
+call %~dp0..\config\cfg_make_%MAKE_VERSION%_path.cmd
 
 set PATH=%SYS_PATH%;%MAKE_PATH%;%GCC_PATH%
 

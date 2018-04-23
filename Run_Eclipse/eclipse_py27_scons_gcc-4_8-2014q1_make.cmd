@@ -4,13 +4,13 @@ setlocal
 set PYTHON_VERSION=27
 set ECLIPSE_VERSION=
 set GCC_VERSION=4_8-2014q1
-
-set MAKE_PATH=C:\Program Files\GNU MCU Eclipse\Build Tools\2.9-20170629-1013\bin\bin
+set MAKE_VERSION=gnumcueclipse
 
 call %~dp0..\config\cfg_sys_path.cmd
 call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
 call %~dp0..\config\cfg_eclipse%ECLIPSE_VERSION%_path.cmd
 call %~dp0..\config\cfg_gcc_%GCC_VERSION%_path.cmd
+call %~dp0..\config\cfg_make_%MAKE_VERSION%_path.cmd
 
 set PATH=%SYS_PATH%;%MAKE_PATH%;%GCC_PATH%;%PYTHON_PATH%
 
