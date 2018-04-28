@@ -1,3 +1,3 @@
 @echo off
 
-set ECLIPSE_PATH=D:\Program Files\eclipse\
+set ECLIPSE_PATH=D:\sw\eclipse\
