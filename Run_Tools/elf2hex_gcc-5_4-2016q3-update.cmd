@@ -14,5 +14,5 @@ call %~dp0..\config\cfg_make_%MAKE_VERSION%_path.cmd
 set PATH=%SYS_PATH%;%MAKE_PATH%;%GCC_PATH%;%PYTHON_PATH%
 
 echo %PATH%
-arm-none-eabi-objcopy -O ihex "%1" "%1.hex"
+arm-none-eabi-objcopy -O ihex %1 %1.hex
 ::pause
