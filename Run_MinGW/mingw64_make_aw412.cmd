@@ -4,7 +4,7 @@ if not defined MSYSTEM_VERSION (
   set MSYSTEM_VERSION=64
 )
 
-set PYTHON_VERSION=27
+set PYTHON_VERSION=2
 set GCC_VERSION=4_8-2014q1
 set MAKE_VERSION=gnumcueclipse
 
@@ -19,7 +19,7 @@ set CONTITLE="MinGW x%MSYSTEM_VERSION%"
 ::set PATH=%SYS_PATH%;%MSYS_PATH%;C:\Program Files\GNU MCU Eclipse\Build Tools\2.9-20170629-1013\bin\bin;D:\gnu\arm\4.8-2014q1\bin;D:\gnu\arm\4.8-2014q1\arm-none-eabi\bin;G:\dev\py27\Scripts;G:\dev\py27
 set PATH=%SYS_PATH%;%MSYS_PATH%;%MAKE_PATH%;%GCC_PATH%;%PYTHON_PATH%
 
-set work_dir=E:\gitlab\aworks2\aw_stm32f412
+set work_dir=D:\gitlab\aworks2\aw_stm32f412
 
 echo cd to "%work_dir%"
 cd /d "%work_dir%"

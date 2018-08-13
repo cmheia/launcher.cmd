@@ -1,16 +1,19 @@
 @echo off
 
-set PYTHON_VERSION=27
+set PYTHON_VERSION=3
+set MSYSTEM=MINGW64
+
+set CONTITLE="%MSYSTEM% NVM PYTHON%PYTHON_VERSION%"
 
 call %~dp0..\config\cfg_global_proxy.cmd
 
 call %~dp0..\config\cfg_sys_path.cmd
 call %~dp0..\config\cfg_node_path.cmd
 call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
+call %~dp0..\config\cfg_msys_path.cmd
+call %~dp0..\config\cfg_vscode_path.cmd
 
-set CONTITLE="NVM PYTHON%PYTHON_VERSION%"
-
-set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%
+set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%;%MSYS_PATH%\mingw64\bin
 
 set PYTHON_VERSION=
 

@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set PYTHON_VERSION=27
+set PYTHON_VERSION=2
 set ECLIPSE_VERSION=
 set GCC_VERSION=msys64
 set MAKE_VERSION=msys64

@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set PYTHON_VERSION=36
+set PYTHON_VERSION=3
 set MSYSTEM_VERSION=64
 set ECLIPSE_VERSION=
 

@@ -1,17 +1,17 @@
 @echo off
-setlocal
 
-set PYTHON_VERSION=27
-set GCC_VERSION=5_4-2016q3-update
-set MAKE_VERSION=gnumcueclipse
+set PYTHON_VERSION=2
+set CMD_TITLE="PY%PYTHON_VERSION%"
+
+call %~dp0..\config\cfg_python_proxy.cmd
 
 call %~dp0..\config\cfg_sys_path.cmd
-call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
-call %~dp0..\config\cfg_eclipse%ECLIPSE_VERSION%_path.cmd
-call %~dp0..\config\cfg_gcc_%GCC_VERSION%_path.cmd
-call %~dp0..\config\cfg_make_%MAKE_VERSION%_path.cmd
 
-set PATH=%SYS_PATH%;%MAKE_PATH%;%GCC_PATH%;%PYTHON_PATH%
+call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
+
+set PATH=%SYS_PATH%;%PYTHON_PATH%
+
+set PYTHON_VERSION=
 
 set work_dir=%~dp0
 set target_arg=%1
@@ -33,6 +33,4 @@ set target_arg=
 set target_attr=
 set target_type=
 
-echo %PATH%
-start %CONTITLE% %ComSpec%
-::pause
+start %CMD_TITLE% %ComSpec%

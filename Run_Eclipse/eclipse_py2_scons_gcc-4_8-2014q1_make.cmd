@@ -1,9 +1,9 @@
 @echo off
 setlocal
 
-set PYTHON_VERSION=27
+set PYTHON_VERSION=2
 set ECLIPSE_VERSION=
-set GCC_VERSION=7-2017-q4-major
+set GCC_VERSION=4_8-2014q1
 set MAKE_VERSION=gnumcueclipse
 
 call %~dp0..\config\cfg_sys_path.cmd

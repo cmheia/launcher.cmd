@@ -1,8 +1,6 @@
 @echo off
 
-set PYTHON_VERSION=36
-
-call %~dp0..\config\cfg_global_proxy.cmd
+set PYTHON_VERSION=3
 
 call %~dp0..\config\cfg_sys_path.cmd
 call %~dp0..\config\cfg_node_path.cmd
@@ -34,4 +32,4 @@ set target_arg=
 set target_attr=
 set target_type=
 
-start %CONTITLE% python.exe
+start %CONTITLE% %ComSpec%

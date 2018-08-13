@@ -1,15 +1,18 @@
 @echo off
 
-set PYTHON_VERSION=36
+set PYTHON_VERSION=3
 
-set CONTITLE="PYTHON%PYTHON_VERSION%"
+call %~dp0..\config\cfg_global_proxy.cmd
 
-set SYS_PATH=%SystemRoot%\system32;%SystemRoot%
+call %~dp0..\config\cfg_sys_path.cmd
+call %~dp0..\config\cfg_node_path.cmd
+call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
 
-set PYTHON_HOME=G:\dev\py36
-set PYTHON_PATH=%PYTHON_HOME%;%PYTHON_HOME%\Scripts
+set CONTITLE="NVM PYTHON%PYTHON_VERSION%"
 
-set PATH=%SYS_PATH%;%PYTHON_PATH%
+set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%
+
+set PYTHON_VERSION=
 
 set work_dir=%~dp0
 set target_arg=%1

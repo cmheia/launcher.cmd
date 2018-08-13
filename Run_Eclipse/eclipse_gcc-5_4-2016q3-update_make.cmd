@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set PYTHON_VERSION=27
+set PYTHON_VERSION=2
 set ECLIPSE_VERSION=
 set GCC_VERSION=5_4-2016q3-update
 set MAKE_VERSION=gnumcueclipse

@@ -1,18 +1,17 @@
 @echo off
+setlocal
 
-set PYTHON_VERSION=27
-
-call %~dp0..\config\cfg_global_proxy.cmd
+set PYTHON_VERSION=2
+set GCC_VERSION=5_4-2016q3-update
+set MAKE_VERSION=gnumcueclipse
 
 call %~dp0..\config\cfg_sys_path.cmd
-call %~dp0..\config\cfg_node_path.cmd
 call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
+call %~dp0..\config\cfg_eclipse%ECLIPSE_VERSION%_path.cmd
+call %~dp0..\config\cfg_gcc_%GCC_VERSION%_path.cmd
+call %~dp0..\config\cfg_make_%MAKE_VERSION%_path.cmd
 
-set CONTITLE="NVM PYTHON%PYTHON_VERSION%"
-
-set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%
-
-set PYTHON_VERSION=
+set PATH=%SYS_PATH%;%MAKE_PATH%;%GCC_PATH%;%PYTHON_PATH%
 
 set work_dir=%~dp0
 set target_arg=%1
@@ -34,4 +33,6 @@ set target_arg=
 set target_attr=
 set target_type=
 
-start %CONTITLE% python.exe
+echo %PATH%
+start %CONTITLE% %ComSpec%
+::pause

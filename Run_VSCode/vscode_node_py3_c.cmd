@@ -1,6 +1,6 @@
 @echo off
 
-set PYTHON_VERSION=36
+set PYTHON_VERSION=3
 
 set MSYSTEM_VERSION=64
 

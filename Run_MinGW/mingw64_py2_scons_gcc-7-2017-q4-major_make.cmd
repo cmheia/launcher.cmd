@@ -4,8 +4,8 @@ if not defined MSYSTEM_VERSION (
   set MSYSTEM_VERSION=64
 )
 
-set PYTHON_VERSION=27
-set GCC_VERSION=5_4-2016q3-update
+set PYTHON_VERSION=2
+set GCC_VERSION=7-2017-q4-major
 set MAKE_VERSION=gnumcueclipse
 
 call %~dp0..\config\cfg_msys%MSYSTEM_VERSION%_path.cmd

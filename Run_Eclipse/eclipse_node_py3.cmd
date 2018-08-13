@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set PYTHON_VERSION=36
+set PYTHON_VERSION=3
 set ECLIPSE_VERSION=
 
 call %~dp0..\config\cfg_sys_path.cmd
