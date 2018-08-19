@@ -1,6 +1,6 @@
 @echo off
 
-set CMD_TITLE="NVM"
+set CMD_TITLE="NODE"
 
 call %~dp0..\config\cfg_sys_path.cmd
 

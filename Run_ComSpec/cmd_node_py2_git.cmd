@@ -6,7 +6,7 @@ call %~dp0..\config\cfg_sys_path.cmd
 call %~dp0..\config\cfg_node_path.cmd
 call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
 
-set CONTITLE="NVM PYTHON%PYTHON_VERSION%"
+set CONTITLE="NODE PYTHON%PYTHON_VERSION%"
 set PYTHON_VERSION=
 
 set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%;C:\Program Files (x86)\Git\cmd

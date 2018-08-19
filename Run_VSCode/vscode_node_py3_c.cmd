@@ -12,7 +12,7 @@ call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
 call %~dp0..\config\cfg_msys%MSYSTEM_VERSION%_path.cmd
 call %~dp0..\config\cfg_vscode_path.cmd
 
-set CONTITLE="%MSYSTEM% NVM PYTHON%PYTHON_VERSION%"
+set CONTITLE="%MSYSTEM% NODE PYTHON%PYTHON_VERSION%"
 
 set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%;%MINGW_PATH%
 
