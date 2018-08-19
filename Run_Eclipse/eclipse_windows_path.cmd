@@ -11,7 +11,7 @@ call %~dp0..\config\cfg_sys_path.cmd
 ::call %~dp0..\config\cfg_msys%MSYSTEM_VERSION%_path.cmd
 call %~dp0..\config\cfg_eclipse%ECLIPSE_VERSION%_path.cmd
 
-::set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%;%MINGW_PATH%
+::set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%;%MSYS_PATH%
 ::set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_102\jre
 
 if exist "%ECLIPSE_PATH%eclipse.exe" (
