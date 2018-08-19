@@ -4,14 +4,16 @@ set PYTHON_VERSION=3
 
 call %~dp0..\config\cfg_global_proxy.cmd
 
+call %~dp0..\config\cfg_git_path.cmd
 call %~dp0..\config\cfg_sys_path.cmd
 call %~dp0..\config\cfg_node_path.cmd
 call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
 
 set CONTITLE="NODE PYTHON%PYTHON_VERSION%"
-set PYTHON_VERSION=
 
-set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%;C:\Program Files (x86)\Git\cmd
+set PATH=%SYS_PATH%;%PYTHON_PATH%;%NODE_PATH%;%GIT_PATH%
+
+set PYTHON_VERSION=
 
 set work_dir=%~dp0
 set target_arg=%1
