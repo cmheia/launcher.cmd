@@ -15,7 +15,7 @@ call %~dp0..\config\cfg_eclipse%ECLIPSE_VERSION%_path.cmd
 ::set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_102\jre
 
 if exist "%ECLIPSE_PATH%eclipse.exe" (
-  cd "%ECLIPSE_PATH%"
+  cd /d "%ECLIPSE_PATH%"
 ) else (
   echo "eclipse.exe 路径错误"
   pause
