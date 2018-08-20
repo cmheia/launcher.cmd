@@ -2,17 +2,17 @@
 setlocal
 
 set PYTHON_VERSION=2
-set ECLIPSE_VERSION=
+set ECLIPSE_VERSION=-cpp-oxygen-3a
 set GCC_VERSION=7-2017-q4-major
 set MAKE_VERSION=gnumcueclipse
 
 call %~dp0..\config\cfg_sys_path.cmd
-::call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
+call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd
 call %~dp0..\config\cfg_eclipse%ECLIPSE_VERSION%_path.cmd
 call %~dp0..\config\cfg_gcc_%GCC_VERSION%_path.cmd
 call %~dp0..\config\cfg_make_%MAKE_VERSION%_path.cmd
 
-set PATH=%SYS_PATH%;%MAKE_PATH%;%GCC_PATH%
+set PATH=%SYS_PATH%;%MAKE_PATH%;%GCC_PATH%;%PYTHON_PATH%
 
 if exist "%ECLIPSE_PATH%eclipse.exe" (
   echo cd to "%ECLIPSE_PATH%"
