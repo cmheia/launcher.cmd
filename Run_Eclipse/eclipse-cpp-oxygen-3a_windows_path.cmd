@@ -17,7 +17,7 @@ call %~dp0..\config\cfg_eclipse%ECLIPSE_VERSION%_path.cmd
 if exist "%ECLIPSE_PATH%eclipse.exe" (
   cd /d "%ECLIPSE_PATH%"
 ) else (
-  echo "eclipse.exe è·¯å¾„é”™è¯¯"
+  echo "eclipse.exe Â·¾¶´íÎó"
   pause
   goto :eof
 )
