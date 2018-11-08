@@ -1,4 +1,5 @@
 @echo off
+setlocal
 
 if not defined MSYSTEM_VERSION (
   set MSYSTEM_VERSION=64

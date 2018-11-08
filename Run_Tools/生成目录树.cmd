@@ -1,4 +1,5 @@
 @echo off
+setlocal
 title 自动生成目录树工具
 
 set work_dir=%1

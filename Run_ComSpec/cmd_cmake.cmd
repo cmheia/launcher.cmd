@@ -1,4 +1,5 @@
 @echo off
+setlocal
 
 call %~dp0..\config\cfg_cmake_path.cmd
 

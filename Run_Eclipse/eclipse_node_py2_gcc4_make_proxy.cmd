@@ -1,4 +1,5 @@
 @echo off
+setlocal
 
 set PYTHON_VERSION=2
 set MSYSTEM_VERSION=64

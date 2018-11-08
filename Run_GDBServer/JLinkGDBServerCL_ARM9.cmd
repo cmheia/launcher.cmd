@@ -1,4 +1,5 @@
 @echo off
+setlocal
 
 set PATH=C:\Program Files (x86)\SEGGER\JLink;%PATH%
 

@@ -1,4 +1,5 @@
 @echo off
+setlocal
 
 set work_dir=%~dp0
 set target_arg=%1

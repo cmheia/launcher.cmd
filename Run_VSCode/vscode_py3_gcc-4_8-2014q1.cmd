@@ -1,4 +1,5 @@
 @echo off
+setlocal
 
 set PYTHON_VERSION=3
 set GCC_VERSION=4_8-2014q1

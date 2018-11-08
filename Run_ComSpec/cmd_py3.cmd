@@ -1,4 +1,5 @@
 @echo off
+setlocal
 
 set PYTHON_VERSION=3
 set CMD_TITLE="PY%PYTHON_VERSION%"
