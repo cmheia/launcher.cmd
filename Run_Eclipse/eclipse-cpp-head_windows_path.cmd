@@ -3,7 +3,7 @@ setlocal
 
 ::set PYTHON_VERSION=3
 ::set MSYSTEM_VERSION=64
-set ECLIPSE_VERSION=-cpp-photon-R
+set ECLIPSE_VERSION=-cpp-head
 
 call %~dp0..\config\cfg_sys_path.cmd
 ::call %~dp0..\config\cfg_node_path.cmd

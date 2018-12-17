@@ -2,9 +2,9 @@
 setlocal
 
 set PYTHON_VERSION=2
-set ECLIPSE_VERSION=-cpp-photon-R
-set GCC_VERSION=msys64
-set MAKE_VERSION=msys64
+set ECLIPSE_VERSION=-cpp-head
+set GCC_VERSION=5_4-2016q3-update
+set MAKE_VERSION=gnumcueclipse
 
 call %~dp0..\config\cfg_sys_path.cmd
 ::call %~dp0..\config\cfg_python%PYTHON_VERSION%_path.cmd

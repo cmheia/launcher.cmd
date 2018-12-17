@@ -2,7 +2,7 @@
 setlocal
 
 set PYTHON_VERSION=2
-set ECLIPSE_VERSION=-cpp-photon-R
+set ECLIPSE_VERSION=-cpp-head
 set GCC_VERSION=7-2017-q4-major
 set MAKE_VERSION=gnumcueclipse
 
